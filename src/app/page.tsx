@@ -27,7 +27,7 @@ export default function Home() {
   const PROJECT_1_SLIDES = [
     () => <Image src="/Project1/LOGIN.PNG" alt="login img" height={450} width={750} />,
     () => <Image src="/Project1/HOME.PNG" alt="home img" height={450} width={750} />,
-    () => <Image src="/Project1/EMPLOYEE-CREATION.png" alt="emp img" height={450} width={750} />,
+    () => <Image src="/Project1/EMPLOYEE-CREATION.PNG" alt="emp img" height={450} width={750} />,
     () => <Image src="/Project1/TRAINING-REVIEW.PNG" alt="review img" height={450} width={750} />,
   ]
 
@@ -41,9 +41,9 @@ export default function Home() {
   ]
   
   const PROJECT_3_SLIDES = [
-    () => <Image src="/Project3/Stats2.PNG" alt="stats img" height={450} width={750}/>,
-    () => <Image src="/Project3/SampleTest.PNG" alt="sample img"  height={450} width={750}/>,
-    () => <Image src="/Project3/Features2.PNG" alt="feature img"  height={450} width={750}/>,
+    () => <Image src="/Project3/Stats2.png" alt="stats img" height={450} width={750}/>,
+    () => <Image src="/Project3/SampleTest.png" alt="sample img"  height={450} width={750}/>,
+    () => <Image src="/Project3/Features2.png" alt="feature img"  height={450} width={750}/>,
   ]
 
 
