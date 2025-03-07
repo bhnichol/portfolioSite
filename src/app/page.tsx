@@ -16,19 +16,6 @@ import TRCIMG from "../../public/Logo4iPrism.jpg"
 import OHIOIMG from "../../public/ohio-bobcats.svg"
 import { EmblaOptionsType } from "embla-carousel";
 import EmblaCarousel from "./EmblaCarousel";
-import HOMEIMG from "../../public/Project1/HOME.png"
-import LOGINIMG from "../../public/Project1/LOGIN.png"
-import EMPIMG from "../../public/Project1/EMPLOYEE-CREATION.png"
-import REVIEWIMG from "../../public/Project1/TRAINING-REVIEW.png"
-import SAMPLEIMG from "../../public/Project3/SampleTest.png"
-import FEATUREIMG from "../../public/Project3/Features2.png"
-import STATSIMG from "../../public/Project3/Stats2.png"
-import OULOGINIMG from "../../public/Project2/OULOGIN.png"
-import MAINIMG from "../../public/Project2/MAIN.png"
-import EVENTCREATEIMG from "../../public/Project2/EVENT-CREATE.png"
-import EVENTVIEWIMG from "../../public/Project2/EVENT-VIEW.png"
-import MAPIMG from "../../public/Project2/MAP.png"
-import CHATIMG from "../../public/Project2/CHAT.png"
 import GOOGLEIMG from "../../public/gmail-icon-logo-svgrepo-com.svg"
 import LIIMG from "../../public/linkedin-icon-2-logo-svgrepo-com.svg"
 import GITIMG from "../../public/github-icon-1-logo-svgrepo-com.svg"
@@ -38,33 +25,27 @@ export default function Home() {
   const cardContainerCss = 'items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border hover:border-[#78339c] border-[#202024] rounded-md mt-[20px] mb-[20px]'
   const OPTIONS: EmblaOptionsType = {}
   const PROJECT_1_SLIDES = [
-    () => <Image src={LOGINIMG} alt="login img" />,
-    () => <Image src={HOMEIMG} alt="home img" />,
-    () => <Image src={EMPIMG} alt="emp img" />,
-    () => <Image src={REVIEWIMG} alt="review img" />,
+    () => <Image src="/Project1/LOGIN.png" alt="login img" height={450} width={750} />,
+    () => <Image src="/Project1/HOME.png" alt="home img" height={450} width={750} />,
+    () => <Image src="/Project1/EMPLOYEE-CREATION.png" alt="emp img" height={450} width={750} />,
+    () => <Image src="/Project1/TRAINING-REVIEW.png" alt="review img" height={450} width={750} />,
   ]
 
   const PROJECT_2_SLIDES = [
-    () => <Image src={OULOGINIMG} alt="login img" height={700}/>,
-    () => <Image src={MAINIMG} alt="main img" height={700}/>,
-    () => <Image src={EVENTCREATEIMG} alt="event create img" height={700}/>,
-    () => <Image src={EVENTVIEWIMG} alt="event view img" height={700}/>,
-    () => <Image src={MAPIMG} alt="map img" height={700}/>,
-    () => <Image src={CHATIMG} alt="chat img" height={700}/>,
+    () => <Image src="/Project2/OULOGIN.png"alt="login img" height={700} width={300}/>,
+    () => <Image src="/Project2/MAIN.png" alt="main img" height={700} width={300}/>,
+    () => <Image src="/Project2/EVENT-CREATE.png" alt="event create img" height={700} width={300}/>,
+    () => <Image src="/Project2/EVENT-VIEW.png" alt="event view img" height={700} width={300}/>,
+    () => <Image src="/Project2/MAP.png" alt="map img" height={700} width={300}/>,
+    () => <Image src="/Project2/CHAT.png" alt="chat img" height={700} width={300}/>,
   ]
   
   const PROJECT_3_SLIDES = [
-    () => <Image src={STATSIMG} alt="stats img" />,
-    () => <Image src={SAMPLEIMG} alt="sample img" />,
-    () => <Image src={FEATUREIMG} alt="feature img" />,
+    () => <Image src="/Project3/Stats2.png" alt="stats img" height={450} width={750}/>,
+    () => <Image src="/Project3/SampleTest.png" alt="sample img"  height={450} width={750}/>,
+    () => <Image src="/Project3/Features2.png" alt="feature img"  height={450} width={750}/>,
   ]
 
-  const PROJECT_4_SLIDES = [
-    () => <Image src={LOGINIMG} alt="tailwind img" />,
-    () => <Image src={HOMEIMG} alt="tailwind img" />,
-    () => <Image src={EMPIMG} alt="tailwind img" />,
-    () => <Image src={REVIEWIMG} alt="tailwind img" />,
-  ]
 
   const scrollButton = (target: string) => {
     document.getElementById(target)?.scrollIntoView({
