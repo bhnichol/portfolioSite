@@ -22,7 +22,7 @@ import GITIMG from "../../public/github-icon-1-logo-svgrepo-com.svg"
 
 export default function Home() {
   const cardsContainer = useRef<HTMLDivElement>(null);
-  const cardContainerCss = 'items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border hover:border-[#78339c] border-[#202024] rounded-md mt-[20px] mb-[20px]'
+  const cardContainerCss = 'items-center justify-items-center sm:p-[15px] min-w-[20%] flex flex-col drop-shadow-lg bg-[#202024] border hover:border-[#78339c] border-[#202024] rounded-md mt-[20px] mb-[20px]'
   const OPTIONS: EmblaOptionsType = {}
   const PROJECT_1_SLIDES = [
     () => <Image src="/Project1/LOGIN.PNG" alt="login img" height={450} width={750} />,
@@ -89,10 +89,10 @@ export default function Home() {
   return (
 
     <div className="bg-[#1A1A1D] min-h-screen bg-[radial-gradient(#3e3e42_1px,transparent_1px)] [background-size:64px_64px]">
-      <div className="min-h-screen pt-50 ml-125 mr-125 flex-col flex justify-between">
+      <div className="min-h-screen pt-[10%] ml-[10%] mr-[10%] flex-col flex justify-between">
         <div className="relative" ref={cardsContainer}>
           <div>
-            <div className="items-center justify-items-center sm:p-20 drop-shadow-lg bg-[#202024] border rounded-md">
+            <div className="items-center justify-items-center sm:p-20 drop-shadow-lg bg-[#202024] rounded-md">
               <p className="text-white text-3xl">Hello my name is <span className="text-[#AD49E1]">Bryce</span>, <br /> &ensp; I am an aspiring software developer!</p>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center items-end pb-5">
-          <svg xmlns="http://www.w3.org/2000/svg" fill='none' viewBox="0 0 24 24" strokeWidth="1" stroke="#AD49E1" className="flex size-13 bg-[#202024] rounded-full animate-bounce  border hover:border-[#78339c] " onClick={() => scrollButton('aboutMe')}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill='none' viewBox="0 0 24 24" strokeWidth="1" stroke="#AD49E1" className="flex size-13 bg-[#202024] rounded-full animate-bounce  border border-[#202024] hover:border-[#78339c] " onClick={() => scrollButton('aboutMe')}>
             <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
           </svg>
         </div>
@@ -137,7 +137,7 @@ export default function Home() {
         {/* About me cards */}
         <div className="flex justify-evenly space-x-[5px] mt-[20px] mb-[20px]">
           {/* Technology card */}
-          <div className="items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border-[#202024] rounded-md w-[25%]">
+          <div className="items-center justify-items-center sm:p-[15px] drop-shadow-lg bg-[#202024] border-[#202024] rounded-md w-[25%]">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.25" stroke="#AD49E1" className="size-35 rounded-full bg-[#2d2d33] p-5"
               onMouseEnter={(e) => { e.currentTarget.classList.add("spin-once") }}
               onAnimationEnd={(e) => { e.currentTarget.classList.remove("spin-once") }}
@@ -186,7 +186,7 @@ export default function Home() {
             </div>
           </div>
           {/* Work experience card */}
-          <div className="items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border-[#202024] rounded-md w-[25%]">
+          <div className="items-center justify-items-center sm:p-[15px] drop-shadow-lg bg-[#202024] border-[#202024] rounded-md w-[25%]">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.25" stroke="#AD49E1" className="size-35 rounded-full bg-[#2d2d33] p-5"
               onMouseEnter={(e) => { e.currentTarget.classList.add("spin-once") }}
               onAnimationEnd={(e) => { e.currentTarget.classList.remove("spin-once") }}
@@ -216,8 +216,8 @@ export default function Home() {
             </div>
           </div>
           {/* Eductaion card */}
-          <div className="items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border-[#202024] rounded-md w-[25%]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.25" stroke="#AD49E1" className="size-35 rounded-full bg-[#2d2d33] p-5"
+          <div className="items-center justify-items-center sm:p-[15px] drop-shadow-lg bg-[#202024] border-[#202024] rounded-md w-[25%]">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.25" stroke="#AD49E1" className="size-35 rounded-full bg-[#2d2d33] p-[5px]"
               onMouseEnter={(e) => { e.currentTarget.classList.add("spin-once") }}
               onAnimationEnd={(e) => { e.currentTarget.classList.remove("spin-once") }}
             >
@@ -225,23 +225,23 @@ export default function Home() {
             </svg>
             <h1 className="text-xl pt-5">My Education: </h1>
             <div>
-              <div className="flex flex-row justify-evenly bg-[#2d2d33] rounded-md p-4 mt-5 border hover:border-[#78339c] border-[#202024] ">
-                <div className="min-w-[40%] pr-4 min-h-[15vh]">
+              <div className="flex flex-row justify-evenly bg-[#2d2d33] rounded-md p-[4px] mt-5 border hover:border-[#78339c] border-[#202024] ">
+                <div className="w-[30%] pr-[4px] min-h-[15vh]">
                   <p className="text-sm pb-3">August 2020 - May 2024</p>
                   <p className="text-sm pb-3">Ohio University</p>
                   <Image src={OHIOIMG} alt="corps img" height={50} width={100} />
                 </div>
-                <div>
+                <div className="w-[50%]">
                   <p>Bachelor of Science in Computer Science</p>
                 </div>
               </div>
-              <div className="flex flex-row justify-evenly bg-[#2d2d33] rounded-md p-4 mt-5 border hover:border-[#78339c] border-[#202024]">
-                <div className="min-w-[40%] pr-4 min-h-[15vh]">
+              <div className="flex flex-row justify-evenly bg-[#2d2d33] rounded-md p-[4px] mt-5 border hover:border-[#78339c] border-[#202024]">
+                <div className="w-[30%] pr-[4px] min-h-[15vh]">
                   <p className="text-sm pb-3">August 2020 - May 2024</p>
                   <p className="text-sm pb-3">Ohio University</p>
                   <Image src={OHIOIMG} alt="corps img" height={50} width={100} />
                 </div>
-                <div>
+                <div className="w-[50%]">
                   <p>Bachelor of Science in Mathematics</p>
                 </div>
               </div>
@@ -348,7 +348,7 @@ export default function Home() {
         <div className="justify-items-center bg-[#202024] p-4" id="contact">
           <h1 className="text-3xl">Contact</h1>
         </div>
-          <div className="flex flex-row justify-items-center justify-self-center space-x-[10px]">
+          <div className="flex flex-row items-center justify-center justify-self-center space-x-[10px] w-full">
           <div className={`${cardContainerCss}`}>
             <Image src={LIIMG} alt="Linked img" height={100}/>
             <div className="pt-2">
