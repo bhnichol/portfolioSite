@@ -32,18 +32,18 @@ export default function Home() {
   ]
 
   const PROJECT_2_SLIDES = [
-    () => <Image src="/Project2/OULOGIN.PNG"alt="login img" height={700} width={300}/>,
-    () => <Image src="/Project2/MAIN.PNG" alt="main img" height={700} width={300}/>,
-    () => <Image src="/Project2/EVENT-CREATE.PNG" alt="event create img" height={700} width={300}/>,
-    () => <Image src="/Project2/EVENT-VIEW.PNG" alt="event view img" height={700} width={300}/>,
-    () => <Image src="/Project2/MAP.PNG" alt="map img" height={700} width={300}/>,
-    () => <Image src="/Project2/CHAT.PNG" alt="chat img" height={700} width={300}/>,
+    () => <Image src="/Project2/OULOGIN.PNG" alt="login img" height={700} width={300} />,
+    () => <Image src="/Project2/MAIN.PNG" alt="main img" height={700} width={300} />,
+    () => <Image src="/Project2/EVENT-CREATE.PNG" alt="event create img" height={700} width={300} />,
+    () => <Image src="/Project2/EVENT-VIEW.PNG" alt="event view img" height={700} width={300} />,
+    () => <Image src="/Project2/MAP.PNG" alt="map img" height={700} width={300} />,
+    () => <Image src="/Project2/CHAT.PNG" alt="chat img" height={700} width={300} />,
   ]
-  
+
   const PROJECT_3_SLIDES = [
-    () => <Image src="/Project3/Stats2.png" alt="stats img" height={450} width={750}/>,
-    () => <Image src="/Project3/SampleTest.png" alt="sample img"  height={450} width={750}/>,
-    () => <Image src="/Project3/Features2.png" alt="feature img"  height={450} width={750}/>,
+    () => <Image src="/Project3/Stats2.png" alt="stats img" height={450} width={750} />,
+    () => <Image src="/Project3/SampleTest.png" alt="sample img" height={450} width={750} />,
+    () => <Image src="/Project3/Features2.png" alt="feature img" height={450} width={750} />,
   ]
 
 
@@ -92,7 +92,7 @@ export default function Home() {
       <div className="min-h-screen pt-[10%] ml-[10%] mr-[10%] flex-col flex justify-between">
         <div className="relative" ref={cardsContainer}>
           <div>
-            <div className="items-center justify-items-center sm:p-20 drop-shadow-lg bg-[#202024] rounded-md">
+            <div className="items-center justify-items-center p-20 drop-shadow-lg bg-[#202024] rounded-md">
               <p className="text-white text-3xl">Hello my name is <span className="text-[#AD49E1]">Bryce</span>, <br /> &ensp; I am an aspiring software developer!</p>
             </div>
           </div>
@@ -113,12 +113,12 @@ export default function Home() {
   )`,
             }}
           >
-            <div className="items-center justify-items-center sm:p-20 select-none pointer-events-none transition-colors text-transparent bg-[#78339c]">
+            <div className="items-center justify-items-center p-20 select-none pointer-events-none transition-colors text-transparent bg-[#78339c]">
               <p className="text-white text-3xl">Hello my name is <span className="">Bryce</span>, <br /> &ensp; I am an aspiring software developer!</p>
             </div>
 
           </div>
-          <div className="flex justify-evenly space-x-[10px]  mt-[10px]">
+          <div className="flex grid grid-cols-1 gap-[10px] sm:grid-cols-3   mt-[10px]">
             <button className="flex-1 text-white text-3xl drop-shadow-lg bg-[#202024] rounded-md py-4 border border-[#202024] hover:border-[#78339c] cursor-pointer" onClick={() => scrollButton('aboutMe')}>About Me</button>
             <button className="flex-1 text-white text-3xl drop-shadow-lg bg-[#202024] rounded-md py-4 border border-[#202024] hover:border-[#78339c] cursor-pointer" onClick={() => scrollButton('projects')}>Projects</button>
             <button className="flex-1 text-white text-3xl drop-shadow-lg bg-[#202024] rounded-md py-4 border border-[#202024] hover:border-[#78339c] cursor-pointer" onClick={() => scrollButton('contact')}>Contact</button>
@@ -135,9 +135,9 @@ export default function Home() {
           <h1 className="text-3xl">About Me</h1>
         </div>
         {/* About me cards */}
-        <div className="flex justify-evenly space-x-[5px] mt-[20px] mb-[20px]">
+        <div className="flex justify-items-center grid grid-cols-1 gap-[40px] lg:grid-cols-3 mt-[20px] mb-[20px] lg:p-[50px] p-[20px]">
           {/* Technology card */}
-          <div className="items-center justify-items-center sm:p-[15px] drop-shadow-lg bg-[#202024] border-[#202024] rounded-md w-[25%]">
+          <div className="items-center justify-items-center sm:p-[15px] drop-shadow-lg bg-[#202024] border-[#202024] rounded-md w-full">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.25" stroke="#AD49E1" className="size-35 rounded-full bg-[#2d2d33] p-5"
               onMouseEnter={(e) => { e.currentTarget.classList.add("spin-once") }}
               onAnimationEnd={(e) => { e.currentTarget.classList.remove("spin-once") }}
@@ -186,7 +186,7 @@ export default function Home() {
             </div>
           </div>
           {/* Work experience card */}
-          <div className="items-center justify-items-center sm:p-[15px] drop-shadow-lg bg-[#202024] border-[#202024] rounded-md w-[25%]">
+          <div className="items-center justify-items-center sm:p-[15px] drop-shadow-lg bg-[#202024] border-[#202024] rounded-md w-full">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.25" stroke="#AD49E1" className="size-35 rounded-full bg-[#2d2d33] p-5"
               onMouseEnter={(e) => { e.currentTarget.classList.add("spin-once") }}
               onAnimationEnd={(e) => { e.currentTarget.classList.remove("spin-once") }}
@@ -216,7 +216,7 @@ export default function Home() {
             </div>
           </div>
           {/* Eductaion card */}
-          <div className="items-center justify-items-center sm:p-[15px] drop-shadow-lg bg-[#202024] border-[#202024] rounded-md w-[25%]">
+          <div className="items-center justify-items-center sm:p-[15px] drop-shadow-lg bg-[#202024] border-[#202024] rounded-md w-full">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.25" stroke="#AD49E1" className="size-35 rounded-full bg-[#2d2d33] p-[5px]"
               onMouseEnter={(e) => { e.currentTarget.classList.add("spin-once") }}
               onAnimationEnd={(e) => { e.currentTarget.classList.remove("spin-once") }}
@@ -255,73 +255,75 @@ export default function Home() {
         <div className="justify-items-center bg-[#202024] p-4" id="projects">
           <h1 className="text-3xl">Projects</h1>
         </div>
-        {/* Project #1 */}
-        <div className="flex flex-row justify-between">
-          <div className="items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border-[#202024] rounded-md mt-[20px] mb-[20px]  w-[30%] ml-10 border hover:border-[#78339c] border-[#202024]">
-            <h1 className="text-2xl"> Training Manager Web Application </h1>
-            <p className="text-md justify-self-start mt-10"> &ensp; This web application was initially requested to be built by my employer (USACE), however due to restricted resources I was unable to create the app using the tools I thought best. I ended up creating this app using PowerApps and preceded to create this in my own time using <span className="text-[#AD49E1]"> ReactJs </span> and <span className="text-[#AD49E1]"> Node.js </span> with a local <span className="text-[#AD49E1]"> oracle database </span>
-              This app is designed to help managers plan and maintain a training plan for their employees. Some of the features include:</p>
-            <br />
-            <ul className="list-disc">
-              <li>Functional <span className="text-[#AD49E1]"> authentication </span>, with a registration and login screen. Passwords are salted, hashed, and stored properly</li>
-              <li>The ability to create courses with customizable course hours, travel hours, travel cost, and tuition</li>
-              <li>Creation of employees with hourly rates and assignment to organizations</li>
-              <li>Creation of organizations</li>
-              <li>The ability to add courses in bulk to employees and then individualize each employees courses to be added</li>
-            </ul>
-            <br />
-            <a target="_blank" rel="noopener noreferrer" href='https://github.com/bhnichol/TrainingManager/' className="text-[#AD49E1] hover:underline">SOURCE CODE</a>
-          </div>
-          <div className="items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border hover:border-[#78339c] border-[#202024] rounded-md mt-[20px] mb-[20px]  w-[60%] mr-10 ">
-            <EmblaCarousel slides={PROJECT_1_SLIDES} options={OPTIONS} />
-          </div>
-        </div>
-        {/* Project 2 */}
-        <div className="flex flex-row justify-between">
-          <div className="items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border hover:border-[#78339c] border-[#202024] rounded-md mt-[20px] mb-[20px]  w-[60%] ml-10 ">
-            <div className="ml-[35%] mr-[35%]">
-            <EmblaCarousel slides={PROJECT_2_SLIDES} options={OPTIONS} />
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[50px] lg:p-[50px]  p-[20px]">
+          {/* Project #1 */}
+          <div className="col-span-1 w-full">
+            <div className="items-center justify-items-center drop-shadow-lg bg-[#202024] border-[#202024] rounded-md border hover:border-[#78339c] border-[#202024] p-[20px] h-full">
+              <h1 className="text-2xl"> Training Manager Web Application </h1>
+              <p className="text-md justify-self-start mt-10"> &ensp; This web application was initially requested to be built by my employer (USACE), however due to restricted resources I was unable to create the app using the tools I thought best. I ended up creating this app using PowerApps and preceded to create this in my own time using <span className="text-[#AD49E1]"> ReactJs </span> and <span className="text-[#AD49E1]"> Node.js </span> with a local <span className="text-[#AD49E1]"> oracle database </span>
+                This app is designed to help managers plan and maintain a training plan for their employees. Some of the features include:</p>
+              <br />
+              <ul className="list-disc">
+                <li>Functional <span className="text-[#AD49E1]"> authentication </span>, with a registration and login screen. Passwords are salted, hashed, and stored properly</li>
+                <li>The ability to create courses with customizable course hours, travel hours, travel cost, and tuition</li>
+                <li>Creation of employees with hourly rates and assignment to organizations</li>
+                <li>Creation of organizations</li>
+                <li>The ability to add courses in bulk to employees and then individualize each employees courses to be added</li>
+              </ul>
+              <br />
+              <a target="_blank" rel="noopener noreferrer" href='https://github.com/bhnichol/TrainingManager/' className="text-[#AD49E1] hover:underline">SOURCE CODE</a>
             </div>
           </div>
-          <div className="items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border hover:border-[#78339c] border-[#202024] rounded-md mt-[20px] mb-[20px]  w-[30%] mr-10">
-            <h1 className="text-2xl"> SpOUrtify App </h1>
-            <p className="text-md justify-self-start mt-10"> &ensp; This iOs app was created for a class. I worked on a team as the Quality Assurance manager, my main roles aside from developing consisted of code reviews and testing to ensure a quality project. This app was intended to be used by Ohio University as a event board. 
-              Students could post events, meetups, or even just post that they need an extra person for a sporting event. This app was created using <span className="text-[#AD49E1]">React Native</span> and used <span className="text-[#AD49E1]">Firebase</span> as the database. Some of its features include:</p>
-            <br />
-            <ul className="list-disc">
-              <li>Functional <span className="text-[#AD49E1]"> authentication </span>, uses <span className="text-[#AD49E1]">Redux Toolkit</span> for state management and route protection</li>
-              <li>Create events that are visible to the public or private and visible to only selected individuals or groups</li>
-              <li>Fully customize event banners with icons and thumbnails, set an attendee limit, and set a location that can be viewed within the app on a map.</li>
-              <li>Chat rooms with ability to make one-on-one or group chats</li>
-            </ul>
-            <br />
-            <a target="_blank" rel="noopener noreferrer" href='https://github.com/bhnichol/spOUrtify/' className="text-[#AD49E1] hover:underline">SOURCE CODE</a>
+          <div className="items-center justify-items-center drop-shadow-lg bg-[#202024] border hover:border-[#78339c] border-[#202024] rounded-md lg:col-span-2 w-full p-[5px] h-full">
+            <EmblaCarousel slides={PROJECT_1_SLIDES} options={OPTIONS} />
           </div>
-        </div>
-        {/* Project 3 */}
-        <div className="flex flex-row justify-between">
-          <div className="items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border hover:border-[#78339c] border-[#202024] rounded-md mt-[20px] mb-[20px]  w-[30%] ml-10">
-            <h1 className="text-2xl"> Cancer Random Forest Classifier </h1>
-            <p className="text-md justify-self-start mt-10"> &ensp; This program was created for a class during my time as a student at Ohio University. 
-              Using <span className="text-[#AD49E1]">python</span> I was tasked with creating a <span className="text-[#AD49E1]">random forest classifier</span> to classify anonymous patients as having cancer or not having cancer. Using python, 
-              I developed a program that created <span className="text-[#AD49E1]">binary trees</span> using <span className="text-[#AD49E1]">recursive</span> methodologies for the "forest" of the classifier. The program contains contants that allow the user to change the size of the forest and depth of each binary tree. 
-              Some of the accomplishments that I took away from this project were:</p>
-            <br />
-            <ul className="list-disc">
-              <li>Gained experience in <span className="text-[#AD49E1]">bioinformatics</span>, <span className="text-[#AD49E1]">computational genomics</span>, and cancer informatics</li>
-              <li>Implemented, employed, and evaluated <span className="text-[#AD49E1]">machine learning</span> methods, including decision tree, random forest, information gain, entropy, n-fold cross-validation, and bootstrapping</li>
-              <li>Applied <span className="text-[#AD49E1]">data mining</span> processes (involving data cleaning, exploratory data analysis, feature extraction, pattern discovery, and classification) to discover new knowledge from real-world data sets</li>
-              <li>Worked with 250 anonymous patients and developed a classifier that predicted cancer in a patient with 80% accuracy</li>
-            </ul>
-            <br />
-            <a target="_blank" rel="noopener noreferrer" href='https://github.com/bhnichol/RandomForestClassifier/' className="text-[#AD49E1] hover:underline">SOURCE CODE</a>
+
+          {/* Project 2 */}
+            <div className="items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border hover:border-[#78339c] border-[#202024] rounded-md lg:col-span-2 w-full p-[5px] h-full">
+              <div className="ml-[35%] mr-[35%]">
+                <EmblaCarousel slides={PROJECT_2_SLIDES} options={OPTIONS} />
+              </div>
+            </div>
+            <div className="col-span-1 w-full">
+            <div className="items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border hover:border-[#78339c] border-[#202024] rounded-md p-[20px] h-full">
+              <h1 className="text-2xl"> SpOUrtify App </h1>
+              <p className="text-md justify-self-start mt-10"> &ensp; This iOs app was created for a class. I worked on a team as the Quality Assurance manager, my main roles aside from developing consisted of code reviews and testing to ensure a quality project. This app was intended to be used by Ohio University as a event board.
+                Students could post events, meetups, or even just post that they need an extra person for a sporting event. This app was created using <span className="text-[#AD49E1]">React Native</span> and used <span className="text-[#AD49E1]">Firebase</span> as the database. Some of its features include:</p>
+              <br />
+              <ul className="list-disc">
+                <li>Functional <span className="text-[#AD49E1]"> authentication </span>, uses <span className="text-[#AD49E1]">Redux Toolkit</span> for state management and route protection</li>
+                <li>Create events that are visible to the public or private and visible to only selected individuals or groups</li>
+                <li>Fully customize event banners with icons and thumbnails, set an attendee limit, and set a location that can be viewed within the app on a map.</li>
+                <li>Chat rooms with ability to make one-on-one or group chats</li>
+              </ul>
+              <br />
+              <a target="_blank" rel="noopener noreferrer" href='https://github.com/bhnichol/spOUrtify/' className="text-[#AD49E1] hover:underline">SOURCE CODE</a>
+            </div>
           </div>
-          <div className="items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border hover:border-[#78339c] border-[#202024] rounded-md mt-[20px] mb-[20px]  w-[60%] mr-10 ">
-            <EmblaCarousel slides={PROJECT_3_SLIDES} options={OPTIONS} />
-          </div>
-        </div>
-        {/* Project 4 */}
-        {/* <div className="flex flex-row justify-between">
+          {/* Project 3 */}
+          <div className="col-span-1 w-full">
+            <div className="items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border hover:border-[#78339c] border-[#202024] rounded-md p-[20px] h-full">
+              <h1 className="text-2xl"> Cancer Random Forest Classifier </h1>
+              <p className="text-md justify-self-start mt-10"> &ensp; This program was created for a class during my time as a student at Ohio University.
+                Using <span className="text-[#AD49E1]">python</span> I was tasked with creating a <span className="text-[#AD49E1]">random forest classifier</span> to classify anonymous patients as having cancer or not having cancer. Using python,
+                I developed a program that created <span className="text-[#AD49E1]">binary trees</span> using <span className="text-[#AD49E1]">recursive</span> methodologies for the "forest" of the classifier. The program contains contants that allow the user to change the size of the forest and depth of each binary tree.
+                Some of the accomplishments that I took away from this project were:</p>
+              <br />
+              <ul className="list-disc">
+                <li>Gained experience in <span className="text-[#AD49E1]">bioinformatics</span>, <span className="text-[#AD49E1]">computational genomics</span>, and cancer informatics</li>
+                <li>Implemented, employed, and evaluated <span className="text-[#AD49E1]">machine learning</span> methods, including decision tree, random forest, information gain, entropy, n-fold cross-validation, and bootstrapping</li>
+                <li>Applied <span className="text-[#AD49E1]">data mining</span> processes (involving data cleaning, exploratory data analysis, feature extraction, pattern discovery, and classification) to discover new knowledge from real-world data sets</li>
+                <li>Worked with 250 anonymous patients and developed a classifier that predicted cancer in a patient with 80% accuracy</li>
+              </ul>
+              <br />
+              <a target="_blank" rel="noopener noreferrer" href='https://github.com/bhnichol/RandomForestClassifier/' className="text-[#AD49E1] hover:underline">SOURCE CODE</a>
+            </div>
+            </div>
+            <div className="items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border hover:border-[#78339c] border-[#202024] rounded-md lg:col-span-2 w-full p-[5px] h-full">
+              <EmblaCarousel slides={PROJECT_3_SLIDES} options={OPTIONS} />
+            </div>
+          {/* Project 4 */}
+          {/* <div className="flex flex-row justify-between">
           <div className="items-center justify-items-center sm:p-10 drop-shadow-lg bg-[#202024] border hover:border-[#78339c] border-[#202024] rounded-md mt-[20px] mb-[20px]  w-[60%] ml-10 ">
             <div className="">
             <EmblaCarousel slides={PROJECT_4_SLIDES} options={OPTIONS} />
@@ -343,31 +345,32 @@ export default function Home() {
             <a target="_blank" rel="noopener noreferrer" href='https://github.com/bhnichol/TrainingManager/' className="text-[#AD49E1] hover:underline">SOURCE CODE</a>
           </div>
         </div> */}
+        </div>
       </div>
       <div className="text-white">
         <div className="justify-items-center bg-[#202024] p-4" id="contact">
           <h1 className="text-3xl">Contact</h1>
         </div>
-          <div className="flex flex-row items-center justify-center justify-self-center space-x-[10px] w-full">
+        <div className="flex flex-row items-center justify-center justify-self-center space-x-[10px] w-full">
           <div className={`${cardContainerCss}`}>
-            <Image src={LIIMG} alt="Linked img" height={100}/>
+            <Image src={LIIMG} alt="Linked img" height={100} />
             <div className="pt-2">
-            <a target="_blank" rel="noopener noreferrer" href='www.linkedin.com/in/bryce-nicholson22' className="text-[#AD49E1] hover:underline ">LINKEDIN</a>
+              <a target="_blank" rel="noopener noreferrer" href='www.linkedin.com/in/bryce-nicholson22' className="text-[#AD49E1] hover:underline ">LINKEDIN</a>
             </div>
           </div>
           <div className={`${cardContainerCss}`}>
-            <Image src={GOOGLEIMG} alt="Google img" height={100}/>
+            <Image src={GOOGLEIMG} alt="Google img" height={100} />
             <div className="pt-2">
-            <a target="_blank" rel="noopener noreferrer" href='' className="text-[#AD49E1] hover:underline ">bhnichol22@gmail.com</a>
+              <a target="_blank" rel="noopener noreferrer" href='' className="text-[#AD49E1] hover:underline ">bhnichol22@gmail.com</a>
             </div>
           </div>
           <div className={`${cardContainerCss}`}>
-            <Image src={GITIMG} alt="git img" height={100}/>
+            <Image src={GITIMG} alt="git img" height={100} />
             <div className="pt-2">
-            <a target="_blank" rel="noopener noreferrer" href='https://github.com/bhnichol/' className="text-[#AD49E1] hover:underline ">GITHUB</a>
+              <a target="_blank" rel="noopener noreferrer" href='https://github.com/bhnichol/' className="text-[#AD49E1] hover:underline ">GITHUB</a>
             </div>
           </div>
-          </div>
+        </div>
       </div>
     </div>
   );
